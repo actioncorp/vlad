@@ -1,42 +1,40 @@
 <!doctype html>
-<html lang="ru">
+<html>
 <head>
     <title>Урок</title>
     <meta charset="UTF-8">
 </head>
 <body>
-<form action="formdata.php" method="post" name="form1">
+<form action="formdata.php" method="POST" name="form1">
     <fieldset>
         <legend>Ввод личных данных</legend>
-    <label>Введите Ваше имя:<input name="name" size="10" maxlength="10"></label>
-    <p><label>Введите Ваш пароль:<input type="password" name="password" size="25"></label></p>
+        <label>Введите Ваше имя:<input name="name" size="10" maxlength="10"></label>
+        <p><label>Введите Ваш пароль:<input type="password" name="password" size="25"></label></p>
     </fieldset>
     <fieldset>
-    <legend>Вопросы</legend>
-    <p>Любите играть в игры?</p>
-    <label>Да<input type="radio" name="time" value="yes" checked></label>
-    <label>Нет<input type="radio" name="time" value="no"></label>
-    <p>Какие игры Вам нравится больше?</p>
-    <label><input type="checkbox" name="dota" checked>Dota2</label>
-    <label><input type="checkbox" name="cs">Cs:Go</label>
-    <label><input type="checkbox" name="wc" disabled    >WarCraft</label>
-    <p>Сколько в день Вы спите?</p>
-    <p>
-        <select name="sleep">
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option selected>8</option>
-            <option>8></option>
-        </select>
-    </p>
+        <legend>Вопросы</legend>
+        <p>Любите играть в игры?</p>
+        <label>Да<input type="radio" name="love" value="yes" checked></label>
+        <label>Нет<input type="radio" name="love" value="no"></label>
+        <p>Какие игры Вам нравится больше?</p>
+        <label><input type="checkbox" name="dota" checked>Dota2</label>
+        <label><input type="checkbox" name="cs">Cs:Go</label>
+        <label><input type="checkbox" name="wc">WarCraft</label>
+        <p>Сколько в день Вы спите?</p>
+        <p>
+            <select name="sleep">
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option selected>8</option>
+                <option>8></option>
+            </select>
+        </p>
     </fieldset>
     <p><label for="1">Поделитесь своими наработками по экономии времени:</label></p>
-
-    <p><textarea id="1" cols="50" rows="6" readonly>Опишите свою проблемму...</textarea></p>
+    <p><textarea id="1" cols="50" rows="6">Опишите свою проблемму...</textarea></p>
     <p><input type="reset" name="reset" value="Очистить"> <input type="submit" name="submit" value="Отправить"></p>
-    <input type="image" src="images/ibutton.png" name="imagebutton">
-    <p><input type="button" value="Кнопка"></p>
+    <input type="image" src="images/ibutton.png" alt="картинка" name="imagebutton">
 </form>
 </body>
 </html>
