@@ -10,7 +10,7 @@
 <body>
 
 <?php
-$result = mail("test@test.ru","Анкета сайта","Имя: $_POST[name] \nПароль: $_POST[password] \nЛюбите играть в игры: $_POST[love]");
+$result = mail("test@test.ru","Анкета сайта","Имя:" . $_POST[name] . "\nПароль: " . $_POST[password] . "\nЛюбите играть в игры: " . $_POST[love]);
 
 if ($result) {
     echo "<p>Сообщение отправлено</p>";
