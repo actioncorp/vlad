@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCKTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-
 <?php
-$result = mail("test@test.ru","Анкета сайта","Имя: $_POST[name] \nПароль: $_POST[password] \nЛюбите играть в игры: $_POST[love]");
-
+$result = mail("test@test.ru","Анкета сайта","Имя:" . $_POST['name'] . "\nПароль: " . $_POST['password'] . "\nЛюбите играть в игры: " . $_POST['love']);
 if ($result) {
     echo "<p>Сообщение отправлено</p>";
 }
@@ -19,6 +17,5 @@ else {
     echo "<p>Сообщение не отправлено</p>";
 }
 ?>
-
 </body>
 </html>
